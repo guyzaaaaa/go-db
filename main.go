@@ -7,7 +7,7 @@ import (
 	"gorm.io/gorm"
 )
 func connectToMariaDB() (*gorm.DB, error) {
-    dsn := "root:1234@tcp(localhost:3306)/usergo?charset=utf8mb4&parseTime=True&loc=Local"
+    dsn := "user22:254545@tcp(localhost:80)/usergo?charset=utf8mb4&parseTime=True&loc=Local"
     db, err := gorm.Open(mysql.Open(dsn), &gorm.Config{})
     if err != nil {
         return nil, err
